@@ -1,0 +1,32 @@
+<header>
+  <div class="container logo-wrap">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a class="absolute-toggle d-block d-md-none" data-toggle="collapse" href="#navbarMenu" role="button" aria-expanded="false" aria-controls="navbarMenu"><span class="burger-lines"></span></a>
+        <h1 class="site-logo">Scott</h1>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md  navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">    
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <%= link_to  "Home", root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to  "About", about_path, class: "nav-link active" %>
+          </li>
+        </ul>  
+      </div>
+    </div>
+  </nav>
+</header>
+<section class="site-section big-image ">
+  <div class="container pt-5">
+    <h2 class="text-center">About Me</h2>
+  </div>
+</section>

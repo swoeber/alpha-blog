@@ -1,0 +1,35 @@
+<header>
+  <div class="container logo-wrap">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a class="absolute-toggle d-block d-md-none" data-toggle="collapse" href="#navbarMenu" role="button" aria-expanded="false" aria-controls="navbarMenu"><span class="burger-lines"></span></a>
+        <h1 class="site-logo">Scott</h1>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md  navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">    
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <%= link_to  "Home", root_path, class: "nav-link active" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to  "About", about_path, class: "nav-link " %>
+          </li>
+        </ul>  
+      </div>
+    </div>
+  </nav>
+</header>
+<section class="site-section big-image">
+  <div class="container-fluid p-0">
+    <div class="card col-sm-12 border-0 p-0">
+      <%= image_tag  "https://picsum.photos/1280/400/?image=1021", class: "card-img-top border-0" %>
+      <%# image_tag  "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p320x320/30441234_10216791003433657_7069737935557361664_n.jpg?_nc_cat=0&oh=08ec84069e480e935819be95f1e5bec3&oe=5BD7F544", class: "portait" %>
+    </div>
+  </div>
+</section>
