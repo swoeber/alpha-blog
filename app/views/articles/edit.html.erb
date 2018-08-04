@@ -1,24 +1,4 @@
 <div class="container">
   <h1> Edit <%= @article.title %> </h1>
-  <% if @article.errors.any? %>
-    <div class="alert alert-danger alert-dismissible">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <% @article.errors.full_messages.each do |error| %>
-        <div class="d-block"><%= error %></div>
-      <% end %>
-    </div>
-  <% end %>
-  <%= form_for @article, class: "form-group" do |f| %>
-    <div class="form-group">
-      <%= f.label :title, "Title" %>
-      <%= f.text_field :title, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :description, "Description"%>
-      <%= f.text_area :description, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.submit "Submit", disable_with: 'Submiting...', class: "form-control btn btn-primary" %>
-    </div>
-  <% end %>
+  <%= render 'form' %>
 </div>

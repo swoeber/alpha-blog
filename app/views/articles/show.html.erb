@@ -7,10 +7,13 @@
     <p><%= @article.description %></p>
   </div>
   <div class="row">
-    <%= link_to "Edit", edit_article_path %>
+
+    <span class="mr-1"><%= link_to "Edit", edit_article_path %></span>
+    <span class="mr-1"><%= link_to "Articles", articles_path %></span>
+    <span class="mr-1"><%= link_to "Delete", article_path, method: :delete  %></span>
   </div>
   <div class="row">
-    <%= link_to "Articles", articles_path %>
+
   </div>
 
 </div>
