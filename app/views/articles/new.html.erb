@@ -1,0 +1,17 @@
+
+<div class="container">
+  <h1> Create and Article </h1>
+  <%= form_for @article, class: "form-group" do |f| %>
+    <div class="form-group">
+      <%= f.label :title, "Title" %>
+      <%= f.text_field :title, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :description, "Description"%>
+      <%= f.text_area :description, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "Submit", disable_with: 'Submiting...', class: "form-control btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
