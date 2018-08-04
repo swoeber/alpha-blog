@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>List of Articles</h1>
+  <div class="list-group">
+  <% @article.each do | item | %>
+      <%= link_to item.title, article_path(item), class: "list-group-item list-group-item-action" %>
+  <% end %>
+  </div>
+</div>
